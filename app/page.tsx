@@ -35,10 +35,12 @@ function Dimension({ label, value }: { label: string; value: number }) {
 
 export default function Home() {
   const [idea, setIdea] = useState(
-    "A B2B website operations SaaS for freelancers and agencies that detects technical, SEO, DNS and email issues, creates AI fix packs for Claude/Codex/Manus, verifies the fix, and monitors regressions."
+    "An AI accounts receivable copilot for freelancers and small agencies that helps them get paid faster. It tracks unpaid and overdue invoices, detects clients with recurring late-payment behavior, prepares personalized follow-up sequences, remembers payment promises, recommends when to escalate, and gives the business owner a dashboard showing how much money is currently stuck in unpaid invoices."
   );
-  const [audience, setAudience] = useState("Freelance web developers, small web agencies, SEO consultants");
-  const [region, setRegion] = useState("English-speaking markets");
+  const [audience, setAudience] = useState(
+    "Freelancers, consultants, creative agencies, web development agencies, marketing agencies, small service businesses, and independent contractors who invoice clients directly."
+  );
+  const [region, setRegion] = useState("United States, United Kingdom, Canada, Australia");
   const [timeRange, setTimeRange] = useState<"month" | "year" | "all">("year");
   const [language, setLanguage] = useState<ValidationLanguage>("en");
   const [result, setResult] = useState<ValidationResult | null>(null);
